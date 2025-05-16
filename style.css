@@ -1,0 +1,156 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #6e00ff, #9e00ff);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  padding: 1rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.hero-text {
+  flex: 1 1 45%;
+  color: white;
+  padding-left: 2rem;
+  text-align: justify;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Button */
+.btn {
+  background-color: white;
+  color: #7429c6;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.rps-game {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  justify-content: right;
+  width: 200px;
+  height: 150px;
+  margin-left: 25rem;
+  
+}
+
+.rps-game h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rps-btn {
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: #7429c6;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rps-btn:hover {
+  transform: scale(1.1);
+  background: #f3e7ff;
+}
+
+.rps-result {
+  font-weight: bold;
+  font-size: 0.2rem;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .rps-game {
+    margin-left: 0px;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    margin: 1rem auto 0 auto;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+  }
+}
